@@ -1,0 +1,124 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to right bottom, #021a4a, #001d39, #001a1e, #001107, #010200);
+    color: #333;
+}
+
+.concept-five {
+	background-image: linear-gradient(to right top, #000000, #000000, #008793, #000000, #000000);
+		center center / cover;
+	display: flex;
+	align-items: center;
+	.word {
+		width: 600px;
+		margin: auto;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 80%;
+        color: white;
+		&:hover {
+			.char:nth-child(even) {
+				top: 20px;
+			}
+			.char:nth-child(odd) {
+				top: -20px;
+			}
+		}
+	}
+	.char {
+		flex: 1;
+		position: relative;
+		display: inline-block;
+		top: 0;
+		transition: 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+	}
+}
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.img-fissa {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 180px;
+    height: auto;
+    background: none;
+
+}
+
+header {
+    background-image: url('sfondoweb2.jpg');
+    color: #333;
+    padding: 20px 0;
+    text-align: center;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #5e5b5b;
+    color: #8f3232;
+    padding: 1px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 20%;
+    border-style: double;
+    border-color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
